@@ -27,8 +27,8 @@ display_usage() {
 
 git config --global user.name "BENCSIK Janos"
 git config --global user.email "git@butyi.hu"
-git config --global alias.up 'push origin master'
-git config --global alias.down 'pull origin master'
+git config --global alias.u 'push origin master'
+git config --global alias.d 'pull origin master'
 git config --global alias.c 'commit -m'
 git config --global alias.aa 'add --all'
 git config --global alias.s 'status'
