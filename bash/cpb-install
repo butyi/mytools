@@ -1,0 +1,2 @@
+sudo cp cpb /bin/
+sudo chmod +x /bin/cpb
