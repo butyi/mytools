@@ -1,0 +1,8 @@
+#!/bin/bash
+# Movie digitalizer scipt. ms => Movie Scan
+
+# Read my NAS account data (NAS_USER, NAS_PASS)
+. ~/.my-accounts
+
+# Send test mail
+python /home/pi/movscan/sources/py/sendmail.py $GPASS $GTO_TEST "mozgofilm-??" "Itt a youtube link" "DESCRIPTION"
