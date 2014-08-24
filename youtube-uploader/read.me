@@ -1,0 +1,54 @@
+Install setuptools:
+- "wget https://bootstrap.pypa.io/ez_setup.py -O - | sudo python"
+Install (download, extract and "sudo python setup.py install"):
+- progressbar
+- gdata
+- youtube-upload
+
+
+
+
+SONY GPS position:
+"sudo apt-get install gpsbabel"
+Download sony log file from 64G/PRIVATE/SONY/GPS
+"gpsbabel -i nmea -f ~/Dokumentumok/14082400.LOG -o gpx -F sony_positions.gpx"
+Result is something like this:
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx
+  version="1.0"
+  creator="GPSBabel - http://www.gpsbabel.org"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.topografix.com/GPX/1/0"
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<time>2014-08-24T19:40:54Z</time>
+<bounds minlat="47.510911667" minlon="18.925693333" maxlat="47.510923333" maxlon="18.925736667"/>
+<trk>
+<trkseg>
+<trkpt lat="47.510911667" lon="18.925736667">
+  <ele>0.000000</ele>
+  <time>2014-08-24T19:12:27.548Z</time>
+  <course>0.000000</course>
+  <speed>0.195489</speed>
+  <fix>2d</fix>
+</trkpt>
+<trkpt lat="47.510916667" lon="18.925705000">
+  <ele>0.380000</ele>
+  <time>2014-08-24T19:12:29Z</time>
+  <course>0.000000</course>
+  <speed>0.257222</speed>
+  <fix>2d</fix>
+</trkpt>
+<trkpt lat="47.510923333" lon="18.925693333">
+  <ele>0.500000</ele>
+  <time>2014-08-24T19:12:30Z</time>
+  <course>0.000000</course>
+  <speed>0.236644</speed>
+  <fix>2d</fix>
+</trkpt>
+</trkseg>
+</trk>
+</gpx>
+
+
+
+
